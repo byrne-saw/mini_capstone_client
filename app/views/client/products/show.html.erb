@@ -6,6 +6,10 @@
 <h3>Tax: <%= @product["formatted"]["tax"] %></h3>
 <h3>Total: <%= @product["formatted"]["total"] %></h3>
 
+<a href="/client/products/<%= @product["id"] %>/edit">Edit</a>
+<a href="/client/products/<%= @product["id"] %>/" data-method="delete">Delete</a>
+
+<dir></dir>
 
 
 <% @product["images"].each do |image| %>
